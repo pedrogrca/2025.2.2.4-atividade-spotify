@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="app-container">
+        <nav class="main-nav" aria-label="Navegação Principal">
+            <div class="nav-logo-desktop">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="#fff"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                <span>Spotify</span>
+            </div>
+
+            <button class="nav-item active" aria-label="Início">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-4v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z"/></svg>
+                <span>Início</span>
+            </button>
+            <button class="nav-item" aria-label="Buscar">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.227 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"/></svg>
+                <span>Buscar</span>
+            </button>
+            <button class="nav-item" aria-label="Sua Biblioteca">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"/></svg>
+                <span>Sua Biblioteca</span>
+            </button>
+            <button class="nav-item premium-link" aria-label="Premium">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span>Premium</span>
+            </button>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="user-actions">
+                    <button class="settings-btn" aria-label="Configurações">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 3c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                    </button>
+                    <div class="user-avatar">PG</div>
+                </div>
+            </header>
+
+            <div class="content-scroll">
+                <h1 class="greeting">Boa tarde</h1>
+
+                <section class="recent-section">
+                    <div class="recent-grid">
+                        <div class="recent-item">
+                            <img src="/2025.2.2.4-atividade-spotify/Materiais/lofi.jpg" alt="Capa Lofi" class="recent-img">
+                            <span class="recent-title">Lofi Study 2025</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="/2025.2.2.4-atividade-spotify/Materiais/MadisonBeer.jpg" alt="Capa Madison Beer" class="recent-img">
+                            <span class="recent-title">Madison Beer</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="/2025.2.2.4-atividade-spotify/Materiais/DuaLipa.jpg" alt="Capa Dua Lipa" class="recent-img">
+                            <span class="recent-title">Dua Lipa</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="/2025.2.2.4-atividade-spotify/Materiais/TheWeeknd.jpg" alt="Capa The Weeknd" class="recent-img">
+                            <span class="recent-title">The Weeknd</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="/2025.2.2.4-atividade-spotify/Materiais/BillieEilish.jpg" alt="Capa Billie Eilish" class="recent-img">
+                            <span class="recent-title">Billie Eilish</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="/2025.2.2.4-atividade-spotify/Materiais/ArianaGrande.jpg" alt="Capa Ariana Grande" class="recent-img">
+                            <span class="recent-title">Ariana Grande</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="/2025.2.2.4-atividade-spotify/Materiais/BrunoMars.jpg" alt="Capa Bruno Mars" class="recent-img">
+                            <span class="recent-title">Bruno Mars</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="/2025.2.2.4-atividade-spotify/Materiais/LadyGaga.jpg" alt="Capa Lady Gaga" class="recent-img">
+                            <span class="recent-title">Lady Gaga</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="/2025.2.2.4-atividade-spotify/Materiais/OliviaRodrigo.jpg" alt="Capa Olvia Rodrigo" class="recent-img">
+                            <span class="recent-title">Olivia Rodrigo</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="/2025.2.2.4-atividade-spotify/Materiais/SabrinaCarpenter.jpg" alt="Capa Sabrina Carpenter" class="recent-img">
+                            <span class="recent-title">Sabrina Carpenter</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="carousel-section">
+                    <h2 class="section-title">Estações recomendadas</h2>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <div class="station-card station-green">
+                                <span class="radio-badge"></span>
+                                <div class="station-images">
+                                    <img src="/2025.2.2.4-atividade-spotify/Materiais/MixLG.jpg" alt="" class="station-img">
+                                </div>
+                                <h3 class="station-name"></h3>
+                            </div>
+                            <p class="station-description">Com Rihanna, Lady Gaga, Ariana Grande e mais</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="station-card station-blue">
+                                <span class="radio-badge"></span>
+                                <div class="station-images">
+                                    <img src="/2025.2.2.4-atividade-spotify/Materiais/MixMB.jpg" alt="" class="station-img">
+                                </div>
+                                <h3 class="station-name"></h3>
+                            </div>
+                            <p class="station-description">Com Addison Rae, Madison Beer, Conan Gray e mais</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="station-card station-purple">
+                                <span class="radio-badge"></span>
+                                <div class="station-images">
+                                    <img src="/2025.2.2.4-atividade-spotify/Materiais/MixSC.jpg" alt="" class="station-img">
+                                </div>
+                                <h3 class="station-name"></h3>
+                            </div>
+                            <p class="station-description">Com Chappell Roan, Sabrina Carpenter, Tate Mcrae e mais</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="station-card station-orange">
+                                <span class="radio-badge"></span>
+                                <div class="station-images">
+                                    <img src="/2025.2.2.4-atividade-spotify/Materiais/MixPB.jpg" alt="" class="station-img">
+                                </div>
+                                <h3 class="station-name"></h3>
+                            </div>
+                            <p class="station-description">Com Iron Master, Papyrus da Batata, Ninja Raps e mais</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="station-card station-blue">
+                                <span class="radio-badge"></span>
+                                <div class="station-images">
+                                    <img src="/2025.2.2.4-atividade-spotify/Materiais/MixTW.jpg" alt="" class="station-img">
+                                </div>
+                                <h3 class="station-name"></h3>
+                            </div>
+                            <p class="station-description">Com Tinashe, The Weeknd, Kendrick Lamar e mais</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="carousel-section">
+                    <h2 class="section-title">Seus mixes mais ouvidos</h2>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <div class="playlist-card">
+                                <img src="/2025.2.2.4-atividade-spotify/Materiais/MixKDA2.jpg" alt="mix1" class="playlist-img">
+                                <div class="play-btn">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="black"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                            <h3 class="playlist-title">Mix de K/DA</h3>
+                            <p class="station-description">League of Legends, Bea Miller e Seraphine</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="playlist-card">
+                                <img src="/2025.2.2.4-atividade-spotify/Materiais/MixMB2.jpg" alt="Capa Soft 80s" class="playlist-img">
+                                <div class="play-btn">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="black"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                            <h3 class="playlist-title">Mix de Madison Beer</h3>
+                            <p class="station-description">Tate McRae, Addison Rae e Olivia Rodrigo </p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="playlist-card">
+                                <img src="/2025.2.2.4-atividade-spotify/Materiais/MixPop.jpg" alt="Capa Soft 70s" class="playlist-img">
+                                <div class="play-btn">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="black"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                            <h3 class="playlist-title">Mix Pop</h3>
+                            <p class="station-description">Lady Gaga, Sabrina Carpenter, K/DA e mais </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
